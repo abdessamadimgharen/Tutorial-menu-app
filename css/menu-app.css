@@ -1,0 +1,135 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.menu-app {
+    background-color: #f2eff6;
+    padding: 20px;
+    width: 25%;
+    margin: 40px auto;
+}
+.menu-app .edit {
+    text-align: right;
+    color: #0072ff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.menu-app .search input {
+    width: 100%;
+    background-color: #e3e2e8;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 12px;
+}
+.menu-app .search input:hover {
+    outline: none;
+}
+.menu-app .search {
+    position: relative;
+}
+.menu-app .search::before {
+    content: '\f002';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    color: rgba(119, 119, 119, 0.68);
+    transform: translatey(-50%);
+}
+.menu-app .reminder {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-gap: 15px;
+} 
+.menu-app .reminder .col {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+.menu-app .reminder .col  .flex-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.menu-app .reminder .col  .flex-up  i {
+    font-size: 25px;
+}
+.menu-app .reminder .col  .flex-up  i.blue {
+    color: #007eff;
+}
+.menu-app .reminder .col  .flex-up  i.orange {
+    color: #ff8f13;
+}
+.menu-app .reminder .col  .flex-up  i.grey {
+    color: #5c606a;
+}
+.menu-app .reminder .col  .flex-up  i.red {
+    color: #ff492a;
+}
+.menu-app .reminder .col  .flex-up  span:last-of-type {
+    font-size: 27px;
+    font-weight: bold;
+}
+.menu-app .reminder .col p {
+    font-size: 17px;
+    color: #777;
+    font-weight: bold;
+    padding: 0;
+    margin: 0 ;
+}
+.menu-app .list h3 {
+    margin: 0 0 10px;
+    font-weight: 900;
+}
+.menu-app .list .types {
+    padding: 15px 20px;
+    border-radius: 12px ;
+    background-color: white;
+}
+.menu-app .list .types .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-app .list .types .box .left {
+    font-size: 18px;
+    font-weight: bold;
+}
+.menu-app .list .types .box .left i {
+    padding: 5px 10px 5px 0;
+}
+.menu-app .list .types .box .left i.green {
+    color: #18b657;
+}
+.menu-app .list .types .box .left i.yellow {
+    color: #ffc700;
+}
+.menu-app .list .types .box .right span {
+    font-weight: bold;
+    color: #777;
+    font-size: 19px;
+}
+.menu-app .list .types .box .right  i {
+    padding-left: 10px;
+    color: rgba(119, 119, 119, 0.653);
+}
+hr {
+    width: 90%;
+    background-color: #777;
+    opacity: .2;
+    
+}
